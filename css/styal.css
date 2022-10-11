@@ -1,0 +1,129 @@
+.nav-link.active{
+    color: rgb(230, 95, 120) !important;
+}
+.nav-link{
+    color: black;
+}
+.nav-link:hover
+{
+    color: rgb(230, 95, 120);
+}
+.home
+{
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.buttom{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.buttom:hover{
+    color: black;
+    background-color: white;
+}
+.text-col{
+    color:rgb(230, 95, 120); 
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    /* background-color: blue; */
+    border: 1px solid darkgrey;
+    border-radius: 50%;
+}
+.icon:hover{
+    color:hsl(349, 73%, 64%) ;
+    border: 1px solid  rgb(230, 95, 120);
+}
+.SREVICES{
+    background-color: #F8F9FA;
+}
+/* .line{
+    width: 70px;
+    height: 2px;
+    background-color: brown;
+    text-align: center;
+} */
+/* .linE::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    top: 130%;
+    left: 35%;
+} */
+.nav-link.active{
+    /* background-color: rgb(230, 95, 120); */
+    color: black !important;
+    transition: all 2sc !important;
+}
+
+.nav-link{
+    color: black;
+    transition: all 2sc !important;
+}
+.nav-link:hover{
+    color: white !important;
+    background-color:rgb(230, 95, 120) ;
+    border-radius: 50px !important; 
+
+}
+.layar-portfolio{
+    position: absolute;
+   top: 0%;
+   right: 0%;
+   bottom: 0%;
+   left: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    /* transform: scale(1.1 , 1.1); */
+   
+    transition: all 2s;
+}
+
+.layar-portfolio:hover{
+opacity:1 ;
+
+}
+.text-pr{
+    color: rgb(230, 95, 120);
+}
+.icon-foote{
+    background-color: #F1F1F114 ;
+    width: 60px;
+    height: 60px;
+    border: 1px solid darkgrey;
+    border-radius: 50%;
+}
+ .finsh{
+    background-color: #F1F1F114 !important;
+}
+.icon-foote:hover{
+    color:  rgb(230, 95, 120) ;
+    border: 1px solid  rgb(230, 95, 120);
+}
+
+.client-contnt i
+{
+    color: #e65f78 ;
+ 
+}
+.carousel-indicators [data-bs-target]
+{
+    background-color: #e65f78;
+    width: 15px;
+    height: 3px;
+    border:1px solid  #e65f78;
+    border-radius: 30px;
+}
+.carousel-indicators.active
+
+{
+    width: 25px;
+    height: 7px;
+         
+}
