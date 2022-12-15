@@ -2,39 +2,42 @@
     <head>
       <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-      
+      <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/styal.css">
     </head>
     <body>
-    
-      <nav class="container">
-        <nav class="navbar navbar-expand-lg bg-white ">
-          <div class="container-fluid">
+
+
+
+      <nav>
+        
+        <nav id="main-nav"  class="navbar navbar-expand-lg  fixed-top navpar">
+          <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo-dark.png" class="w-75" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <li class="nav-item px-2 ">
+                  <a class="nav-link active " aria-current="page" href="#Home">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                <li class="nav-item px-2 ">
+                  <a class="nav-link " href="#About">About</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">services</a>
+                <li class="nav-item px-2">
+                  <a class="nav-link " href="#services">services</a>
                 </li> 
-                 <li class="nav-item">
-                  <a class="nav-link" href="#">client</a>
+                 <li class="nav-item px-2">
+                  <a class="nav-link " href="#client">client</a>
                 </li> 
-                 <li class="nav-item">
-                  <a class="nav-link" href="#">portfolio</a>
+                 <li class="nav-item px-2">
+                  <a class="nav-link " href="#portfolio">portfolio</a>
                 </li> 
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Bolg</a>
-                </li>  <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                <li class="nav-item px-2">
+                  <a class="nav-link " href="#Bolg">Bolg</a>
+                </li>  <li class="nav-item px-2">
+                  <a class="nav-link " href="#Contact">Contact</a>
                 </li>
                 
               </ul>
@@ -43,13 +46,13 @@
           </div>
         </nav>
       </nav>
-
+    
 <header id="Home">
   <div class="home vh-100">
     <div class="layar bg-black bg-opacity-50 h-100 w-100 d-flex justify-content-center align-items-center">
       <div class="item-layar   text-center">
         <h4 class="text-white">Welcome</h4>
-      <h1 class="text-white">I'M A Graphic Designer.|</h1>
+      <h1 class="element text-white"></h1>
       <p class=" text-mute lead text-white">It is a long established fact that a reader will be of a page when <br>  established fact looking at its layout.      </p>
       <!-- <button class="buttom   py-2 px-5">Dowinlod cv</button> -->
 <button class="buttom py-2 px-4 ">Dowinlod cv</button>
@@ -58,15 +61,24 @@
   </div>
 </header>
 
+<button id="btn-top" class=" btn bg-danger text-white rounded-5 p-2">
+
+  <i class="fa-solid fa-circle-up fa-2x"></i>
+</button>
+
+<div id="LodingScreen" class="  ">
+  <span class="loader">Loading</span>
+</div>
+
 <section id="About">
   <div class="container my-5">
     <div class="row">
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12 wow bounceInRight">
        <div class="item-About py-5">
         <img src="img/about.jpg" class="w-100 border border-4" alt="">
        </div>
       </div>
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12 wow bounceInLeft">
         <div class="item-About py-5">
           <h2 class=" fw-bold">About Me</h2>
         <h4 class="py-3">Hello!<span class="text-col"> I'M Kerri Deo.</span></h4>
@@ -86,68 +98,77 @@
 </section>
  
 
-<section id="services" class="SREVICES">
+<section id="services" class="SREVICES py-5">
   <div class="container ">
-    <div class="row">
-      <div class="col-lg-12">
+    <div class="row gy-4">
+      <div class="col-lg-12 wow bounceInDown">
         <div class="item-services text-center py-5 ">
           
-          <h2>Our Services</h2>
+          <h2><span class=" text-primary ">O</span>ur <span class=" text-primary ">S</span>ervices</h2>
           <p class="lead">It is a long established fact that a reader will be of a page when <br> established fact looking at its layout.</p>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 py-5">
+      <div class="col-lg-4 col-md-6 wow bounceInLeft">
         <div class="item-services border border-1 text-center py-3 px-2">
-          <i class="fa-solid fa-chart-line fa-3x py-1 text-info"></i>
-          <h3>Graphic Design</h3>
+          <i class="fa-solid fa-chart-line fa-3x py-1 "></i>
+          <h3 class=" text-primary">Graphic Design</h3>
           <div></div>
           <p  class="lead">There are many variations of passages of but the majority have suffered alteration in some form.</p>
         </div>
-        <div class="item-services border border-1 text-center py-3 my-4 px-2">
-          <i class="fa-solid fa-layer-group fa-3x py-1 text-info"></i>
-          <h3>Graphic Design</h3>
-          <div class="line"></div>
-          <p  class="lead">There are many variations of passages of but the majority have suffered alteration in some form.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 py-5">
-        <div class="item-services border border-1 text-center py-3 px-2">
-          <i class="fa-solid fa-mug-hot fa-3x py-1 text-info"></i>
-          <h3>Unlimited Color</h3>
-          <div></div>
-          <p  class="lead">There are many variations of passages of but the majority have suffered alteration in some form.</p>
-        </div>
-        <div class="item-services border border-1 text-center py-3 my-4 px-2">
-          <i class="fa-brands fa-font-awesome fa-3x py-1 text-info"></i>
-          <h3>Responsive Design</h3>
-          <div class="line"></div>
-          <p  class="lead">There are many variations of passages of but the majority have suffered alteration in some form.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 py-5">
-        <div class="item-services border border-1 text-center py-3 px-2">
-          <i class="fa-solid fa-cloud-arrow-up  fa-3x py-1 text-info"></i>
-          <h3>Media Marketing</h3>
-          <div></div>
-          <p  class="lead">There are many variations of passages of but the majority have suffered alteration in some form.</p>
-        </div>
-        <div class="item-services border border-1 text-center py-3 my-4 px-2">
-          <i class="fa-solid fa-pen-to-square fa-3x py-1 text-info"></i>
-          <h3>Easy to customize</h3>
-          <div class="line"></div>
-          <p  class="lead">There are many variations of passages of but the majority have suffered alteration in some form.</p>
-        </div>
-      </div>
+        
       
+      </div>
+      <div class="col-lg-4 col-md-6 wow bounceInUp ">
+        <div class="item-services border border-1 text-center py-3 px-2">
+          <i class="fa-solid fa-mug-hot fa-3x py-1 "></i>
+          <h3 class=" text-primary">Unlimited Color</h3>
+          <div></div>
+          <p  class="lead">There are many variations of passages of but the majority have suffered alteration in some form.</p>
+        </div>
+       
+      </div>
+      <div class="col-lg-4 col-md-6 wow bounceInRight">
+        <div class="item-services border border-1 text-center py-3 px-2">
+          <i class="fa-solid fa-cloud-arrow-up  fa-3x py-1 "></i>
+          <h3 class=" text-primary">Media Marketing</h3>
+          <div></div>
+          <p  class="lead">There are many variations of passages of but the majority have suffered alteration in some form.</p>
+        </div>
+      
+      </div>
+      <div class="col-lg-4 col-md-6 wow bounceInLeft">
+        <div class="item-services border border-1 text-center py-3  px-2">
+          <i class="fa-solid fa-layer-group fa-3x py-1 "></i>
+          <h3 class=" text-primary"> Developer</h3>
+          <div class="line"></div>
+          <p  class="lead">There are many variations of passages of but the majority have suffered alteration in some form.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 wow bounceInUp">
+        <div class="item-services border border-1 text-center py-3 px-2">
+          <i class="fa-brands fa-font-awesome fa-3x py-1 "></i>
+          <h3 class=" text-primary">Responsive Design</h3>
+          <div class="line"></div>
+          <p  class="lead">There are many variations of passages of but the majority have suffered alteration in some form.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 wow bounceInRight">
+        <div class="item-services border border-1 text-center py-3 px-2">
+          <i class="fa-solid fa-pen-to-square fa-3x py-1 "></i>
+          <h3 class=" text-primary">Easy to customize</h3>
+          <div class="line"></div>
+          <p  class="lead">There are many variations of passages of but the majority have suffered alteration in some form.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="py-5" >
+<section class="py-5 wow tada" >
 
     <div class="contcact text-center my-5">
     <h2>I Am Available For Freelancer.</h2>
-    <button type="button" class="btn btn-danger my-2 py-2 px-5">Danger</button>
+  
    </div>
   
 </div>
@@ -157,43 +178,46 @@
 <section id="client"  class="SREVICES py-5">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 col-md.12 text-center">
+      <div class="col-lg-12 col-md.12 text-center  wow bounceInDown">
         <h2> <span class="text-info">Our</span> Client</h2>
         <p class="text-muted lead">It is a long established fact that a reader will be of a page when <br> established fact looking at its layout.</p>
       </div>
-      <div class="col-lg-12 col-md.12 py-5">
-        
+      <div class="col-lg-12 col-md.12 py-5 wow bounceInUp">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        
+         
           <div class="carousel-inner">
             <div class="carousel-item active">
-             <div class="client-contnt text-center py-5 ">
-              <i class="fa-solid fa-quote-left d-block pb-4 fa-3x  "></i>
-              <img src="img/testi-1.jpg" class=" rounded-circle" alt="">
-              <p class=" text-muted py-2 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, magnam. <br> Lorem ipsum dolor sit amet.</p>
+        <div class="clint-contant text-center">
+          <i class="fa-solid fa-quote-left fa-4x d-block text-danger"></i>
+          <img src="img/testi-1.jpg" class=" rounded-circle  py-2 img-thumbnail" alt="">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, itaque?</p>
+          <p>Lorem, ipsum dolor sit amet consectetur </p>
+        </div>
+            </div>
+            <div class="carousel-item">
+              <div class="clint-contant text-center">
+                <i class="fa-solid fa-quote-left fa-4x d-block text-danger"></i>
+                <img src="img/testi-2.jpg" class=" rounded-circle py-2 img-thumbnail" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, itaque?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="clint-contant text-center">
+                <i class="fa-solid fa-quote-left fa-4x d-block text-danger"></i>
+                <img src="img/testi-3.jpg" class="py-2 rounded-circle img-thumbnail" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, itaque?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur </p>
+              </div>
+            </div>
+          </div>
          
-             </div>
-            </div>
-            <div class="carousel-item">
-              <div class="client-contnt text-center  py-5 ">
-                <i class="fa-solid fa-quote-left d-block pb-4 fa-3x  "></i>
-                <img src="img/testi-2.jpg" class=" rounded-circle" alt="">
-                <p class=" text-muted py-2 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, magnam. <br> Lorem ipsum dolor sit amet.</p>
-               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="client-contnt text-center py-5 ">
-                <i class="fa-solid fa-quote-left d-block pb-4 fa-3x  "></i>
-                <img src="img/testi-3.jpg" class=" rounded-circle" alt="">
-                <p class=" text-muted py-2 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, magnam. <br> Lorem ipsum dolor sit amet.</p>
-               </div>
-            </div>
+          <div class="carousel-indicators position-static py-3">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button class=" " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-indicators position-static ">
-            <button type="button" data-bs-target="#carouselExampleIndicators " data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2 "></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3 "></button>
-          </div>
+
         </div>
       </div>
     </div>
@@ -202,7 +226,8 @@
 
 
 <section id="portfolio" >
-  <div class="container my-5">
+
+  <div class=" container wow bounceInRight">
     <div class="row">
       <div class="col-lg-12">
       <div class="item-portfolio text-center py-5">
@@ -210,99 +235,344 @@
         <p class="text-muted lead">It is a long established fact that a reader will be of a page when <br> established fact looking at its layout.</p>
        </div>
       </div>
-      <div class="col-lg-12">
-        <div class="item-portfolio">
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active  " aria-current="page" href="#">ALL</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SEO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">WEBDESIGN</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> WORK</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">WORDPRESS</a>
-            </li>
-           
-          </ul>
-        </div>
+    </div>
+  </div>
+<div class=" container wow bounceInLeft ">
+  <div class="row">
+    <div class="col-lg-12 ">
+      <div class=" col-lg-12 d-flex justify-content-center wow bounceInRight">
+        <ul class="nav nav-pills text-black " id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation ">
+            <button class="nav-link active" id="pills-ALL-tab" data-bs-toggle="pill" data-bs-target="#pills-ALL" type="button" role="tab" aria-controls="pills-ALL" aria-selected="true">ALL</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link " id="pills-SEO-tab" data-bs-toggle="pill" data-bs-target="#pills-SEO" type="button" role="tab" aria-controls="pills-SEO" aria-selected="false"> SEO</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-WEBDESIGN-tab" data-bs-toggle="pill" data-bs-target="#pills-WEBDESIGN" type="button" role="tab" aria-controls="pills-WEBDESIGN" aria-selected="false" >WEBDESIGN</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-WORK-tab" data-bs-toggle="pill" data-bs-target="#pills-WORK" type="button" role="tab" aria-controls="pills-WORK" aria-selected="false" >WORK</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-WORDPRESS-tab" data-bs-toggle="pill" data-bs-target="#pills-WORDPRESS" type="button" role="tab" aria-controls="pills-WORDPRESS" aria-selected="false" >WORDPRESS</button>
+          </li>
+        </ul>
       </div>
-      <div class="col-lg-4 col-md-6 my-5">
-      <div class="position-relative ">
-        <img src="img/1.jpg" alt="" class="w-100">
-        <div class="layar-portfolio d-flex justify-content-center align-items-center">
-         
-          <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
-         
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active wow bounceInDown" id="pills-ALL" role="tabpanel" aria-labelledby="pills-ALL-tab" tabindex="0">
+          <div class="container my-5">
+            <div class="row gy-4">
+              
+              
+              <div class="col-lg-4 col-md-6 ">
+              <div class="position-relative ">
+                <img src="img/1.jpg" alt="" class="w-100">
+                <div class="layar-portfolio d-flex justify-content-center align-items-center">
+                 
+                  <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+                 
+                </div>
+                
+              </div>
+            
+                
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="position-relative ">
+              <img src="img/2.jpg" alt="" class="w-100">
+              <div class="layar-portfolio d-flex justify-content-center align-items-center">
+               
+                <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+               
+              </div>
+            </div>
+          
+              
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="position-relative ">
+            <img src="img/3.jpg" alt="" class="w-100">
+            <div class="layar-portfolio d-flex justify-content-center align-items-center">
+             
+              <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+             
+            </div>
+            
+          </div>
+        
+            
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="position-relative  ">
+            <img src="img/4.jpg" alt="" class="w-100">
+            <div class="layar-portfolio d-flex justify-content-center align-items-center">
+             
+              <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="position-relative  ">
+            <img src="img/5.jpg" alt="" class="w-100">
+            <div class="layar-portfolio d-flex justify-content-center align-items-center">
+             
+              <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="position-relative">
+            <img src="img/6.jpg" alt="" class="w-100">
+            <div class="layar-portfolio d-flex justify-content-center align-items-center">
+             
+              <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+             
+            </div>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade " id="pills-SEO" role="tabpanel" aria-labelledby="pills-SEO-tab" tabindex="0">
+          <div class="container my-5">
+            <div class="row gy-4">
+              
+              
+              <div class="col-lg-4 col-md-6 ">
+              <div class="position-relative ">
+                <img src="img/1.jpg" alt="" class="w-100">
+                <div class="layar-portfolio d-flex justify-content-center align-items-center">
+                 
+                  <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+                 
+                </div>
+                
+              </div>
+            
+                
+          </div>
+          <!-- <div class="col-lg-4 col-md-6 ">
+            <div class="position-relative ">
+              <img src="img/2.jpg" alt="" class="w-100">
+              <div class="layar-portfolio d-flex justify-content-center align-items-center">
+               
+                <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+               
+              </div>
+            </div>
+          
+              
+        </div> -->
+        <div class="col-lg-4 col-md-6 ">
+          <div class="position-relative ">
+            <img src="img/3.jpg" alt="" class="w-100">
+            <div class="layar-portfolio d-flex justify-content-center align-items-center">
+             
+              <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+             
+            </div>
+            
+          </div>
+        
+            
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="position-relative  ">
+            <img src="img/4.jpg" alt="" class="w-100">
+            <div class="layar-portfolio d-flex justify-content-center align-items-center">
+             
+              <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="position-relative  ">
+            <img src="img/5.jpg" alt="" class="w-100">
+            <div class="layar-portfolio d-flex justify-content-center align-items-center">
+             
+              <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+             
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-lg-4 col-md-6 ">
+          <div class="position-relative">
+            <img src="img/6.jpg" alt="" class="w-100">
+            <div class="layar-portfolio d-flex justify-content-center align-items-center">
+             
+              <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+             
+            </div>
+          </div>
+        </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-WEBDESIGN" role="tabpanel" aria-labelledby="pills- WEBDESIGN-tab" tabindex="0">
+          <div class="container my-5">
+            <div class="row gy-4">
+              
+              
+        <div class="col-lg-4 col-md-6 ">
+          <div class="position-relative ">
+            <img src="img/3.jpg" alt="" class="w-100">
+            <div class="layar-portfolio d-flex justify-content-center align-items-center">
+             
+              <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+             
+            </div>
+            
+          </div>
+        
+            
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="position-relative  ">
+            <img src="img/4.jpg" alt="" class="w-100">
+            <div class="layar-portfolio d-flex justify-content-center align-items-center">
+             
+              <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+             
+            </div>
+          </div>
         </div>
         
-      </div>
-      <div class="position-relative my-4 ">
-        <img src="img/4.jpg" alt="" class="w-100">
-        <div class="layar-portfolio d-flex justify-content-center align-items-center">
-         
-          <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
-         
+        <div class="col-lg-4 col-md-6 ">
+          <div class="position-relative">
+            <img src="img/6.jpg" alt="" class="w-100">
+            <div class="layar-portfolio d-flex justify-content-center align-items-center">
+             
+              <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+             
+            </div>
+          </div>
         </div>
-      </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-WORK" role="tabpanel" aria-labelledby="pills-WORK-tab" tabindex="0">
+          <div class="container my-5">
+            <div class="row gy-4">
+              
+              
+              <div class="col-lg-4 col-md-6 ">
+              <div class="position-relative ">
+                <img src="img/1.jpg" alt="" class="w-100">
+                <div class="layar-portfolio d-flex justify-content-center align-items-center">
+                 
+                  <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+                 
+                </div>
+                
+              </div>
+            
+                
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="position-relative ">
+              <img src="img/2.jpg" alt="" class="w-100">
+              <div class="layar-portfolio d-flex justify-content-center align-items-center">
+               
+                <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+               
+              </div>
+            </div>
+          
+              
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="position-relative ">
+            <img src="img/3.jpg" alt="" class="w-100">
+            <div class="layar-portfolio d-flex justify-content-center align-items-center">
+             
+              <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+             
+            </div>
+            
+          </div>
         
-  </div>
-  <div class="col-lg-4 col-md-6 my-5">
-    <div class="position-relative ">
-      <img src="img/2.jpg" alt="" class="w-100">
-      <div class="layar-portfolio d-flex justify-content-center align-items-center">
+            
+        </div>
        
-        <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-WORDPRESS" role="tabpanel" aria-labelledby="pills-WORDPRESS-tab" tabindex="0">
+          <div class="container my-5">
+            <div class="row gy-4">
+              
+              
+              <div class="col-lg-4 col-md-6 ">
+              <div class="position-relative ">
+                <img src="img/1.jpg" alt="" class="w-100">
+                <div class="layar-portfolio d-flex justify-content-center align-items-center">
+                 
+                  <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+                 
+                </div>
+                
+              </div>
+            
+                
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="position-relative ">
+              <img src="img/2.jpg" alt="" class="w-100">
+              <div class="layar-portfolio d-flex justify-content-center align-items-center">
+               
+                <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+               
+              </div>
+            </div>
+          
+              
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="position-relative ">
+            <img src="img/3.jpg" alt="" class="w-100">
+            <div class="layar-portfolio d-flex justify-content-center align-items-center">
+             
+              <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
+             
+            </div>
+            
+          </div>
+        
+            
+        </div>
        
+            </div>
+          </div>
+        </div>
+    
       </div>
     </div>
-    <div class="position-relative my-4 ">
-      <img src="img/5.jpg" alt="" class="w-100">
-      <div class="layar-portfolio d-flex justify-content-center align-items-center">
-       
-        <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
-       
-      </div>
-    </div>
-      
-</div>
-<div class="col-lg-4 col-md-6 my-5">
-  <div class="position-relative ">
-    <img src="img/3.jpg" alt="" class="w-100">
-    <div class="layar-portfolio d-flex justify-content-center align-items-center">
-     
-      <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
-     
-    </div>
-    
   </div>
-  <div class="position-relative my-4 ">
-    <img src="img/6.jpg" alt="" class="w-100">
-    <div class="layar-portfolio d-flex justify-content-center align-items-center">
-     
-      <h5 class="text-white "><span class="text-muted py-2"> category</span>  <br > project Title </h5>
-     
-    </div>
-  </div>
-    
 </div>
+
+
+
 </section>
 
+
+
 <section id="Bolg"  class="SREVICES py-4">
- <div class="container my-5">
+ <div class="container my-5 ">
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-12 wow bounceInUp">
      <div class="text-center py-5">
       <h2>Our <span class="text-pr"> Blog</span></h2>
       <p class=" lead text-muted">It is a long established fact that a reader will be of a page when <br> established fact looking at its layout.</p>
      </div>
     </div>
-    <div class="col-lg-4 col-md-4 g-0">
+    <div class="col-lg-4 col-md-4 g-0 wow bounceInRight">
       <div class="item.Bolg p-2">
         <div class="card w-100 p-2" >
           <img src="img/blog-1.jpg" class="card-img-top w-100" alt="...">
@@ -316,7 +586,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-md-4 g-0">
+    <div class="col-lg-4 col-md-4 g-0 wow bounceInDown">
       <div class="item.Bolg p-2">
         <div class="card w-100 p-2" >
           <img src="img/blog-2.jpg" class="card-img-top w-100" alt="...">
@@ -330,7 +600,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-md-4 g-0">
+    <div class="col-lg-4 col-md-4 g-0 wow bounceInLeft">
       <div class="item.Bolg p-2">
         <div class="card w-100 p-2" >
           <img src="img/blog-3.jpg" class="card-img-top w-100" alt="...">
@@ -348,48 +618,50 @@
  </div>
 </section>
 
+
+
 <section id="Contact" class="py-5">
   <div class="container my-5 ">
     <div class="row">
-      <div class="col-lg-12 ">
+      <div class="col-lg-12  wow bounceInDown">
         <div class="item-Contact text-center">
           <h2>Contact <span class="text-pr">Us</span></h2>
         <p class="text-muted ">It is a long established fact that a reader will be of a page when <br> established fact looking at its layout.</p>
         </div>
       </div>
-      <div class="col-lg-4 col-md-12 my-5 ">
+      <div class="col-lg-4 col-md-12 my-5 wow bounceInLeft">
         <div class="item-Contact  text-center">
           <i class="fa-solid fa-mobile-screen-button fa-3x py-3 text-pr"></i>
           <h3>Call Us On</h3>
           <p class="text-muted ">+985 123 7856</p>
         </div>
       </div>
-      <div class="col-lg-4 col-md-12 my-5">
+      <div class="col-lg-4 col-md-12 my-5 wow bounceInUp">
         <div class="item-Contact  text-center">
           <i class="fa-regular fa-envelope  fa-3x py-2 text-pr"></i>
           <h3>Email Us At</h3>
           <p  class="text-muted ">Website.Kerri@gmail.com</p>
         </div>
       </div>
-      <div class="col-lg-4 col-md-12 my-5 ">
+      <div class="col-lg-4 col-md-12 my-5 wow bounceInRight">
         <div class="item-Contact text-center">
           <i class="fa-solid fa-location-dot  fa-3x py-2 text-pr"></i>
           <h3>Visit Office</h3>
           <p  class="text-muted ">202, Grasselli Street , Conway.</p>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 wow bounceInRight">
         <input type="text" class="form-control" placeholder=" Your name" aria-label="First name">
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 wow bounceInLeft">
         <input type="email" class="form-control" id="floatingInput" placeholder="Your email">
  
       </div>
-      <div class="col-lg-12 my-3">
+      <div class="col-lg-12 my-3 wow bounceInDown">
         <input type="email" class="form-control" id="floatingInput" placeholder="Your subject">
  
       </div>
-      <div class="col-lg-12">
+      <div class="col-lg-12 wow bounceInUp">
         
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Your massage"></textarea>
       </div>
@@ -401,17 +673,31 @@
   </div>
 </section>
 
+
+
 <section class="  bg-dark py-5">
   <div class="item-footer d-flex justify-content-center align-items-center py-4">
-    <div class="icon-foote d-flex  justify-content-center align-items-center mx-2 "><i class="fa-brands fa-facebook-f fa-2x text-muted "></i></div>
-    <div class="icon-foote d-flex  justify-content-center align-items-center bg  mx-2"><i class="fa-brands fa-linkedin-in fa-2x text-muted"></i></div>
-    <div class="icon-foote d-flex  justify-content-center align-items-center  mx-2"><i class="fa-brands fa-pinterest-p fa-2x text-muted"></i></div>
-    <div class="icon-foote d-flex  justify-content-center align-items-center mx-2"><i class="fa-brands fa-twitter fa-2x text-muted"></i></div>
+    <div class="icon-foote d-flex  justify-content-center align-items-center mx-2 wow bounceInLeft"><i class="fa-brands fa-facebook-f fa-2x text-muted "></i></div>
+    <div class="icon-foote d-flex  justify-content-center align-items-center bg  mx-2 wow bounceInDown"><i class="fa-brands fa-linkedin-in fa-2x text-muted"></i></div>
+    <div class="icon-foote d-flex  justify-content-center align-items-center  mx-2 wow bounceInUp"><i class="fa-brands fa-pinterest-p fa-2x text-muted"></i></div>
+    <div class="icon-foote d-flex  justify-content-center align-items-center mx-2 wow bounceInRight"><i class="fa-brands fa-twitter fa-2x text-muted"></i></div>
   
   </div>
   <p class="text-muted text-center fa-1x ">2018 - 2021 © Kerri. Design by SRBThemes.</p>
 </section>
 
+
+
+
+
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
  <script src="js/bootstrap.bundle.min.js"></script>
+ <script src="js/wow.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+ <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+ <script src="js/main.js"></script>
+ 
     </body>
 </html>
